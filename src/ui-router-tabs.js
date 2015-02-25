@@ -103,12 +103,6 @@ angular.module('ui.router.tabs').directive('tabs', ['$rootScope', '$state',
 }]).run(['$templateCache',
   function($templateCache) {
     var DEFAULT_TEMPLATE = '<div>' +
-      '<tabset class="tab-container" type="{{type}}" vertical="{{vertical}}" justified="{{justified}}">' +
-      '  <tab class="tab" ng-repeat="tab in tabs" heading="{{tab.heading}}" active="tab.active" ng-click="go(tab.route, tab.params, tab.options)">' +
-      '  </tab>' +
-      '</tabset>' +
-      '</div>';
-    var DEFAULT_TEMPLATE = '<div>' +
           '<md-tabs md-align-tabs="{{md-align-tabs}}"> md-stretch-tabs="{{md-stretch-tabs}}" md-selected="{{md-selected}}" md-no-ink="{{md-no-ink}}" md-no-bar="{{md-no-bar}}"' +
           '  <md-tab ng-repeat="tab in tabs"' +
           '          label="{{tab.heading}}"' +
