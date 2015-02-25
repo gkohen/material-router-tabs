@@ -108,6 +108,14 @@ angular.module('ui.router.tabs').directive('tabs', ['$rootScope', '$state',
       '  </tab>' +
       '</tabset>' +
       '</div>';
+    var DEFAULT_TEMPLATE = '<div>' +
+          '<md-tabs md-align-tabs="{{md-align-tabs}}"> md-stretch-tabs="{{md-stretch-tabs}}" md-selected="{{md-selected}}" md-no-ink="{{md-no-ink}}" md-no-bar="{{md-no-bar}}"' +
+          '  <md-tab ng-repeat="tab in tabs"' +
+          '          label="{{tab.heading}}"' +
+          '          md-active="tab.active"'  +
+          '          ng-click="go(tab.route, tab.params, tab.options)">' +
+          '</md-tabs>' +
+          '</div>';
 
     $templateCache.put('ui-router-tabs-default-template.html', DEFAULT_TEMPLATE);
   }]);
