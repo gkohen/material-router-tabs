@@ -1,6 +1,7 @@
-# UI Router Tabs
+# Material Router Tabs
 
-Leverages [UI Bootstrap](http://angular-ui.github.io/bootstrap/) and [UI Router](https://github.com/angular-ui/ui-router) to give you full-strength route-driven tabs in Angular.js.
+Leverages [Angular Material](https://material.angularjs.org/#/) and [UI Router](https://github.com/angular-ui/ui-router) to give you full-strength route-driven tabs in Angular.js.
+Based on rpocklin@gmail.com version for [UI Bootstrap](http://angular-ui.github.io/bootstrap/).
 
 [![Build Status](https://secure.travis-ci.org/rpocklin/ui-router-tabs.svg)](http:/travis-ci.org/rpocklin/ui-router-tabs)
 [![Coverage Status](https://coveralls.io/repos/rpocklin/ui-router-tabs/badge.png)](https://coveralls.io/r/rpocklin/ui-router-tabs)
